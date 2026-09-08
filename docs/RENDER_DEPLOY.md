@@ -34,7 +34,7 @@
 
 ## Шаг 2. Создать Web Service (Docker)
 
-Данные для переменных окружения (шаг 3) возьмите из карточки PostgreSQL, созданной в шаге 1. Если использовали примеры выше — `USERNAME` = `hexlet_cv_user`, `DATABASE` = `hexlet_cv`, `HOST` — из **Info** в карточке БД.
+Данные для переменных окружения (шаг 3) возьмите из карточки PostgreSQL, созданной в шаге 1. Если использовали примеры выше — `DB_USERNAME` = `hexlet_cv_user`, `DATABASE` = `hexlet_cv`, `HOST` — из **Info** в карточке БД.
 
 1. В Dashboard нажмите **New** → **Web Service**.
 2. Подключите репозиторий:
@@ -58,8 +58,8 @@
 | :---------------------- |:-------------------------------------------------------------------------------------| :-------------------------------- |
 | `SPRING_PROFILES_ACTIVE` | `prod`                                                                               | Включение продакшен-конфигурации  |
 | `JDBC_DATABASE_URL`     | `jdbc:postgresql://{Hostname}:{Port}/{Database}?password={Password}&user={Username}` | Полный JDBC URL (подставьте HOST, PASSWORD и USER из карточки БД) |
-| `USERNAME`              | `hexlet_cv_user`                                                                     | Из карточки PostgreSQL (см. шаг 1) |
-| `PASSWORD`              | *ваш пароль из шага 1*                                                               | Из карточки PostgreSQL            |
+| `DB_USERNAME`           | `hexlet_cv_user`                                                                     | Из карточки PostgreSQL (см. шаг 1) |
+| `DB_PASSWORD`           | *ваш пароль из шага 1*                                                               | Из карточки PostgreSQL            |
 | `DATABASE`              | `hexlet_cv_db`                                                                       | Из карточки PostgreSQL (см. шаг 1) |
 | `HOST`                  | `dpg-xxx123-a`                                                                       | Internal hostname из карточки БД  |
 | `DB_PORT`               | `5432`                                                                               | Порт PostgreSQL                   |
@@ -128,11 +128,11 @@ services:
     envVars:
       - key: SPRING_PROFILES_ACTIVE
         value: prod
-      - key: USERNAME
+      - key: DB_USERNAME
         fromDatabase:
           name: hexlet-cv-db
           property: user
-      - key: PASSWORD
+      - key: DB_PASSWORD
         fromDatabase:
           name: hexlet-cv-db
           property: password
