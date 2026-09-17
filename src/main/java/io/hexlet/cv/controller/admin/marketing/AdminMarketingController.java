@@ -1,16 +1,16 @@
 package io.hexlet.cv.controller.admin.marketing;
 
 import io.github.inertia4j.spring.Inertia;
-import io.hexlet.cv.dto.marketing.DisplayOrderRequest;
 import io.hexlet.cv.dto.marketing.ArticleCreateDto;
-import io.hexlet.cv.dto.marketing.PricingCreateDto;
-import io.hexlet.cv.dto.marketing.ReviewCreateDto;
-import io.hexlet.cv.dto.marketing.StoryCreateDto;
-import io.hexlet.cv.dto.marketing.TeamCreateDto;
 import io.hexlet.cv.dto.marketing.ArticleUpdateDto;
+import io.hexlet.cv.dto.marketing.DisplayOrderRequest;
+import io.hexlet.cv.dto.marketing.PricingCreateDto;
 import io.hexlet.cv.dto.marketing.PricingUpdateDto;
+import io.hexlet.cv.dto.marketing.ReviewCreateDto;
 import io.hexlet.cv.dto.marketing.ReviewUpdateDto;
+import io.hexlet.cv.dto.marketing.StoryCreateDto;
 import io.hexlet.cv.dto.marketing.StoryUpdateDto;
+import io.hexlet.cv.dto.marketing.TeamCreateDto;
 import io.hexlet.cv.dto.marketing.TeamUpdateDto;
 import io.hexlet.cv.handler.exception.ResourceNotFoundException;
 import io.hexlet.cv.service.ArticleService;

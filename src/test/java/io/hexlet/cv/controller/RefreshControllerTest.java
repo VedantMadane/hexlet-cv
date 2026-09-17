@@ -6,13 +6,12 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.header;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
-import org.hamcrest.Matchers;
-
-import jakarta.servlet.http.Cookie;
 import io.hexlet.cv.model.User;
 import io.hexlet.cv.model.enums.RoleType;
 import io.hexlet.cv.repository.UserRepository;
 import io.hexlet.cv.support.TokenTestHelper;
+import jakarta.servlet.http.Cookie;
+import org.hamcrest.Matchers;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,11 +1,11 @@
 package io.hexlet.cv.handler;
 
 import com.fasterxml.jackson.databind.exc.InvalidFormatException;
+import com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException;
 import io.hexlet.cv.audit.AuditEventType;
 import io.hexlet.cv.audit.AuditLogger;
 import io.hexlet.cv.audit.AuditReason;
 import io.hexlet.cv.audit.AuditSubject;
-import com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException;
 import io.hexlet.cv.handler.exception.InvalidPasswordException;
 import io.hexlet.cv.handler.exception.ResourceNotFoundException;
 import io.hexlet.cv.handler.exception.UserAlreadyExistsException;

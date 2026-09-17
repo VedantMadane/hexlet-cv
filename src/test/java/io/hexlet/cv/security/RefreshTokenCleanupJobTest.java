@@ -6,10 +6,9 @@ import io.hexlet.cv.model.RefreshToken;
 import io.hexlet.cv.model.User;
 import io.hexlet.cv.model.enums.RoleType;
 import io.hexlet.cv.repository.RefreshTokenRepository;
+import io.hexlet.cv.repository.UserRepository;
 import java.time.Instant;
 import java.util.UUID;
-
-import io.hexlet.cv.repository.UserRepository;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

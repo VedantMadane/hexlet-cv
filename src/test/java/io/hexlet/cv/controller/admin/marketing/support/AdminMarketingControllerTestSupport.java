@@ -1,5 +1,11 @@
 package io.hexlet.cv.controller.admin.marketing.support;
 
+import static org.mockito.ArgumentMatchers.any;
+import static org.mockito.ArgumentMatchers.anyMap;
+import static org.mockito.ArgumentMatchers.anyString;
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.when;
+
 import com.fasterxml.jackson.databind.ObjectMapper;
 import io.github.inertia4j.spring.Inertia;
 import io.hexlet.cv.service.ArticleService;
@@ -9,6 +15,8 @@ import io.hexlet.cv.service.ReviewService;
 import io.hexlet.cv.service.StoryService;
 import io.hexlet.cv.service.TeamService;
 import io.hexlet.cv.util.ControllerUtils;
+import java.util.HashMap;
+import java.util.List;
 import org.junit.jupiter.api.BeforeEach;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
@@ -19,15 +27,6 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.http.ResponseEntity;
 import org.springframework.test.context.bean.override.mockito.MockitoBean;
 import org.springframework.test.web.servlet.MockMvc;
-
-import java.util.HashMap;
-import java.util.List;
-
-import static org.mockito.ArgumentMatchers.any;
-import static org.mockito.ArgumentMatchers.anyMap;
-import static org.mockito.ArgumentMatchers.anyString;
-import static org.mockito.Mockito.verify;
-import static org.mockito.Mockito.when;
 
 /**
  * Общая инфраструктура для тестов {@code AdminMarketingController}:

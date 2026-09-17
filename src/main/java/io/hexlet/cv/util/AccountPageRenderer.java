@@ -2,12 +2,11 @@ package io.hexlet.cv.util;
 
 import io.github.inertia4j.spring.Inertia;
 import io.hexlet.cv.service.AccountSharedPropsResolver;
+import java.util.HashMap;
+import java.util.Map;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
-
-import java.util.HashMap;
-import java.util.Map;
 
 @Component
 @RequiredArgsConstructor

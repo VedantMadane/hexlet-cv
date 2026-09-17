@@ -5,11 +5,11 @@ import io.hexlet.cv.validator.EmailNotWithSingleCharTld;
 import io.hexlet.cv.validator.NotInDisposableEmailDomains;
 import io.hexlet.cv.validator.NotInTop10K;
 import io.hexlet.cv.validator.PasswordNotSimilarToUser;
+import jakarta.validation.constraints.AssertTrue;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.Size;
-import jakarta.validation.constraints.AssertTrue;
 import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Size;
 import lombok.Getter;
 import lombok.Setter;
 

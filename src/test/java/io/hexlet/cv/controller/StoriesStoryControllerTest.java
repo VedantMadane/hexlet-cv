@@ -4,16 +4,15 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
-import java.util.List;
-import java.util.Map;
-import java.util.UUID;
-import java.util.stream.Stream;
-
 import com.fasterxml.jackson.databind.ObjectMapper;
 import io.hexlet.cv.dto.StoriesStoryDto;
 import io.hexlet.cv.dto.StoriesStoryPageResponse;
 import io.hexlet.cv.model.StoriesStory;
 import io.hexlet.cv.repository.StoriesStoryRepository;
+import java.util.List;
+import java.util.Map;
+import java.util.UUID;
+import java.util.stream.Stream;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;

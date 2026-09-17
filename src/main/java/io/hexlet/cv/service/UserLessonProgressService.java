@@ -8,10 +8,7 @@ import io.hexlet.cv.repository.LessonRepository;
 import io.hexlet.cv.repository.UserLessonProgressRepository;
 import io.hexlet.cv.repository.UserProgramProgressRepository;
 import io.hexlet.cv.repository.UserRepository;
-
-
 import io.hexlet.cv.util.UserUtils;
-import org.springframework.security.access.AccessDeniedException;
 import java.time.Clock;
 import java.time.LocalDateTime;
 import lombok.AllArgsConstructor;
@@ -20,6 +17,7 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
+import org.springframework.security.access.AccessDeniedException;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 

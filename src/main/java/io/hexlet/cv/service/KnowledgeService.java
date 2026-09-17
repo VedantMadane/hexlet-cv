@@ -6,13 +6,11 @@ import io.hexlet.cv.handler.exception.ResourceNotFoundException;
 import io.hexlet.cv.mapper.KnowledgeMapper;
 import io.hexlet.cv.repository.KnowledgeArticleRepository;
 import io.hexlet.cv.repository.KnowledgeInterviewRepository;
-
+import io.hexlet.cv.util.ControllerUtils;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
-
-import io.hexlet.cv.util.ControllerUtils;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.domain.Page;

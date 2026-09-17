@@ -1,12 +1,11 @@
 package io.hexlet.cv.service;
 
-import java.util.List;
-
 import io.hexlet.cv.dto.StoriesStoryDto;
 import io.hexlet.cv.dto.StoriesStoryPageResponse;
 import io.hexlet.cv.mapper.StoriesStoryMapper;
 import io.hexlet.cv.model.StoriesStory;
 import io.hexlet.cv.repository.StoriesStoryRepository;
+import java.util.List;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;

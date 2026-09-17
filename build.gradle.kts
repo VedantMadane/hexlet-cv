@@ -108,6 +108,8 @@ spotless {
 // строка получается слишком длинной и конфликтует в checkstyle
        // formatAnnotations()
         leadingTabsToSpaces(4)
+        endWithNewline()
+        targetExclude("build/**")
     }
 }
 
